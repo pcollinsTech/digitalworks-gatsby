@@ -620,3 +620,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+.green-bg {
+  background-color: #61AAA4;
+}
+.grey-bg {
+  background-color: #CECECE;
+}
