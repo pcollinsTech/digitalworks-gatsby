@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import about from '../../images/headings/about.png'
 
@@ -17,7 +17,7 @@ export default () => {
     <div className="container mt-5">
       <div className="row" id="about">
 
-        <img className="mx-auto" src={about} style={aboutHeader} />
+        <img className="mx-auto" src={about} style={aboutHeader} alt="about" />
         <div className="container">
           <div className="row">
           

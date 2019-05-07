@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import services from '../../images/headings/services.png'
 import content from '../../images/services/content.png'
@@ -20,12 +20,12 @@ export default () => {
   return (
     <div className="container  mt-5">
       <div className="row" id="services">
-        <img className="mx-auto mt-5" src={services} style={servicesHeader} />
+        <img className="mx-auto mt-5" src={services} style={servicesHeader} alt="services-heading"/>
         <div className="container mt-5">
           <div className="row">
 
-            <div className="col-md-3 servicesText">
-              <img src={social} />
+            <div className="col-md-3" style={servicesText}>
+              <img src={social} alt="social"/>
               <ul>
                 <li>Community Management</li>
                 <li>Content Creation</li>
@@ -35,7 +35,7 @@ export default () => {
               </ul>
             </div>
             <div className="col-md-3">
-              <img src={seo} />
+              <img src={seo} alt="seo"/>
               <ul>
                 <li>Paid Search Advertising</li>
                 <li>Re-Marketing</li>
@@ -45,7 +45,7 @@ export default () => {
               </ul>
             </div>
             <div className="col-md-3">
-              <img src={content} />
+              <img src={content} alt="content"/>
               <ul>
                 <li>Content Strategy</li>
                 <li>Content Creation</li>
@@ -55,7 +55,7 @@ export default () => {
               </ul>
             </div>
             <div className="col-md-3">
-              <img src={workshops} />
+              <img src={workshops} alt="workshops"/>
               <ul>
                 <li>One-to-one Sessions</li>
                 <li>Employee Advocacy Training</li>

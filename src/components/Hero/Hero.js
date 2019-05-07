@@ -11,7 +11,8 @@ class Hero extends Component {
   render() {
     return (
       <div className="hero">
-        <img src={hero} style={heroImage}/>
+        <img src={hero} style={heroImage} alt="hero"/>
+        
       </div>
     )
   }

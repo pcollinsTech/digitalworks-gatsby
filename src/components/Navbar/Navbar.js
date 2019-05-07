@@ -7,10 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
 } from 'reactstrap';
 
 import './navbar.css';
@@ -47,7 +43,7 @@ export default class Example extends React.Component {
           <div className="row">
           
           </div>
-          <NavbarBrand href="/"><img src={logo} className="logo"/></NavbarBrand>
+          <NavbarBrand href="/"><img src={logo} className="logo" alt="logo"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
