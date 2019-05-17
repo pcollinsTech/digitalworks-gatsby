@@ -1,7 +1,7 @@
 
-import React from "./node_modules/react"
+import React from "react"
 import PropTypes from "prop-types"
-import './node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../Navbar"
 import "./layout.css"
 
@@ -10,9 +10,6 @@ const Layout = ({ children }) => (
     <Navbar />
     <div>
       <main>{children}</main>
-      <footer>
-
-      </footer>
     </div>
 
   </div>

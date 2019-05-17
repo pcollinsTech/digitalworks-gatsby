@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Another",
+    "image": "../../images/clients/another.jpg"
+  },
+  {
+    "name": "Borrow FOx",
+    "image": "../../images/clients/borrowfox.jpg"
+  },
+  {
+    "name": "Camilla Elphick",
+    "image": "../../images/clients/camilla-elphick.jpg"
+  },
+  {
+    "name": "CCD",
+    "image": "../../images/clients/ccd.jpg"
+  },
+  {
+    "name": "FEB",
+    "image": "../../images/clients/fab.jpg"
+  },
+  {
+    "name": "Goldwell",
+    "image": "../../images/clients/goldwell.jpg"
+  },
+  {
+    "name": "Juliene MacDonald",
+    "image": "../../images/clients/juliene-acdonald.jpg"
+  },
+  {
+    "name": "PetsPyjamas",
+    "image": "../../images/clients/petspyjamas.jpg"
+  },
+  {
+    "name": "Pooppot",
+    "image": "../../images/clients/pooppot.jpg"
+  },
+  {
+    "name": "Squbes",
+    "image": "../../images/clients/squbes.jpg"
+  },
+  {
+    "name": "Swoop",
+    "image": "../../images/clients/swoop.jpg"
+  },
+  {
+    "name": "Too Good To Be",
+    "image": "../../images/clients/tgtb.jpg"
+  },
+  {
+    "name": "Thursday Plantation",
+    "image": "../../images/clients/thursday-plantation.jpg"
+  }
+]

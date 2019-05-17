@@ -1,15 +1,9 @@
 import React from 'react'
 
-import services from '../../images/headings/services.png'
-import content from '../../images/services/content.png'
-import seo from '../../images/services/seo.png'
-import social from '../../images/services/social.png'
-import workshops from '../../images/services/workshops.png'
+import serviceHeader from '../../images/headings/services.png'
+import Item from './Item';
 
-const servicesText = {
-  textAlign: 'center',
-  fontFamily: 'Sans-serif'
-}
+import services from './services.json'
 
 const servicesHeader = {
   contentAlign: 'center',
@@ -18,58 +12,33 @@ const servicesHeader = {
 }
 export default () => {
   return (
-    <div className="container  mt-5">
-      <div className="row" id="services">
-        <img className="mx-auto mt-5" src={services} style={servicesHeader} alt="services-heading"/>
-        <div className="container mt-5">
-          <div className="row">
+    <React.Fragment>
 
-            <div className="col-md-3" style={servicesText}>
-              <img src={social} alt="social"/>
-              <ul>
-                <li>Community Management</li>
-                <li>Content Creation</li>
-                <li>Advertising Management</li>
-                <li>Account Management</li>
-                <li>Influencer Management</li>
-              </ul>
-            </div>
-            <div className="col-md-3">
-              <img src={seo} alt="seo"/>
-              <ul>
-                <li>Paid Search Advertising</li>
-                <li>Re-Marketing</li>
-                <li>PPC Audit</li>
-                <li>SEO Audit</li>
-                <li>Keyword Research</li>
-              </ul>
-            </div>
-            <div className="col-md-3">
-              <img src={content} alt="content"/>
-              <ul>
-                <li>Content Strategy</li>
-                <li>Content Creation</li>
-                <li>Editorial Planning</li>
-                <li>Copywriting</li>
-                <li>Visual Content Creation</li>
-              </ul>
-            </div>
-            <div className="col-md-3">
-              <img src={workshops} alt="workshops"/>
-              <ul>
-                <li>One-to-one Sessions</li>
-                <li>Employee Advocacy Training</li>
-                <li>Group Sessions</li>
-                <li>Content Creation & Planning</li>
-                <li>Social Media Advertising</li>
-              </ul>
+      <div className="container  mt-5">
+        <div className="row" id="services">
+          <img className="mx-auto mt-5" src={serviceHeader} style={servicesHeader} alt="services-heading"/>
+          <div className="container mt-5">
+            <div className="row">
+              {
+                services.map(service => {
+                  return (<Item key={service.id} image={service.image} list={service.list} />)
+                })
+              }
+              
             </div>
           </div>
+
         </div>
 
       </div>
 
-    </div>
+      {/* --- STYLES --- */}
+      <style jsx>{`
+         li {
+           text-decortation:
+         }
+        `}</style>
+    </React.Fragment>
   )
 }
 

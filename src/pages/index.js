@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Services from "../components/Services"
@@ -13,7 +13,7 @@ import News from "../components/News";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Hero />
     <div id="about">
       <About />

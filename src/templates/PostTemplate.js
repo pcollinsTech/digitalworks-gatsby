@@ -3,39 +3,33 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Seo from "../components/Seo";
-import Article from "../components/Article";
-import Post from "../components/Post";
-import { ThemeContext } from "../layouts";
+
 
 const PostTemplate = props => {
   const {
     data: {
-      post,
-      authornote: { html: authorNote },
-      site: {
-        siteMetadata: { facebook }
-      }
-    },
-    pageContext: { next, prev }
+      link,
+      wordpress_id,
+      id,
+      title,
+      slug,
+      excerpt,
+      categories: {
+        id,
+        name,
+        description,
+      },
+    date,
+    comment_status
+    }
   } = props;
 
   return (
-    <React.Fragment>
-      <ThemeContext.Consumer>
-        {theme => (
-            <Post
-              post={post}
-              next={next}
-              prev={prev}
-              authornote={authorNote}
-              // facebook={facebook}
-              theme={theme}
-            />
-        )}
-      </ThemeContext.Consumer>
-
-      <Seo data={post}  />
-    </React.Fragment>
+    <div>
+      <Seo />
+      <h1>{title}</h1>
+      <p>excerpt</p>
+    </div>
   );
 };
 
@@ -63,10 +57,7 @@ export const postQuery = graphql`
       }
       date
       comment_status
-      author{
-        id
-        name
-      }
+      
     }
   }
 `;
